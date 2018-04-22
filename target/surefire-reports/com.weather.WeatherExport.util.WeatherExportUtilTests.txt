@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.weather.WeatherExport.util.WeatherExportUtilTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.341 s <<< FAILURE! - in com.weather.WeatherExport.util.WeatherExportUtilTests
+testRetrieveLocations(com.weather.WeatherExport.util.WeatherExportUtilTests)  Time elapsed: 0.414 s  <<< FAILURE!
+java.lang.AssertionError: expected:<null> but was:<013010>
+	at com.weather.WeatherExport.util.WeatherExportUtilTests.testRetrieveLocations(WeatherExportUtilTests.java:70)
+
+testRetrieveWeatherDataAndExportData(com.weather.WeatherExport.util.WeatherExportUtilTests)  Time elapsed: 0.625 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[??]> but was:<[﻿網走]>
+	at com.weather.WeatherExport.util.WeatherExportUtilTests.testRetrieveWeatherDataAndExportData(WeatherExportUtilTests.java:85)
+

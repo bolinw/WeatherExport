@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.weather.WeatherExport.WeatherExportApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.weather.WeatherExport.WeatherExportApplicationTests
+testCreateArgumentsMapAndInputCheck[0](com.weather.WeatherExport.WeatherExportApplicationTests)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<false> but was:<true>
+	at com.weather.WeatherExport.WeatherExportApplicationTests.testCreateArgumentsMapAndInputCheck(WeatherExportApplicationTests.java:74)
+

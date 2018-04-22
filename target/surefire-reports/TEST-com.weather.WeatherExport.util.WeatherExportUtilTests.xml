@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.weather.WeatherExport.util.WeatherExportUtilTests" time="1.341" tests="6" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\USER\eclipse-workspace\WeatherExport\target\test-classes;C:\Users\USER\eclipse-workspace\WeatherExport\target\classes;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-starter\2.0.1.RELEASE\spring-boot-starter-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot\2.0.1.RELEASE\spring-boot-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\spring-context\5.0.5.RELEASE\spring-context-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\spring-aop\5.0.5.RELEASE\spring-aop-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\spring-beans\5.0.5.RELEASE\spring-beans-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\spring-expression\5.0.5.RELEASE\spring-expression-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.1.RELEASE\spring-boot-autoconfigure-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.0.1.RELEASE\spring-boot-starter-logging-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\USER\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\USER\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;C:\Users\USER\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\USER\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\USER\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\USER\.m2\repository\org\springframework\spring-core\5.0.5.RELEASE\spring-core-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\spring-jcl\5.0.5.RELEASE\spring-jcl-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\USER\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.0.1.RELEASE\spring-boot-starter-test-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-test\2.0.1.RELEASE\spring-boot-test-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.1.RELEASE\spring-boot-test-autoconfigure-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\USER\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\USER\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\USER\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\USER\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\USER\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\USER\.m2\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar;C:\Users\USER\.m2\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar;C:\Users\USER\.m2\repository\net\bytebuddy\byte-buddy\1.7.11\byte-buddy-1.7.11.jar;C:\Users\USER\.m2\repository\net\bytebuddy\byte-buddy-agent\1.7.11\byte-buddy-agent-1.7.11.jar;C:\Users\USER\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\USER\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\USER\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\USER\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\USER\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\USER\.m2\repository\org\springframework\spring-test\5.0.5.RELEASE\spring-test-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\USER\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\USER\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\USER\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;C:\Users\USER\.m2\repository\commons-cli\commons-cli\1.3.1\commons-cli-1.3.1.jar;C:\Users\USER\.m2\repository\net\java\dev\jna\jna\4.3.0\jna-4.3.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\USER\AppData\Local\Temp\surefire6435426332799406565\surefirebooter228211874854222476.jar C:\Users\USER\AppData\Local\Temp\surefire6435426332799406565 2018-04-22T12-41-20_979-jvmRun1 surefire2390999112184243443tmp surefire_03002235820599139816tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\USER\eclipse-workspace\WeatherExport\target\test-classes;C:\Users\USER\eclipse-workspace\WeatherExport\target\classes;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-starter\2.0.1.RELEASE\spring-boot-starter-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot\2.0.1.RELEASE\spring-boot-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\spring-context\5.0.5.RELEASE\spring-context-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\spring-aop\5.0.5.RELEASE\spring-aop-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\spring-beans\5.0.5.RELEASE\spring-beans-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\spring-expression\5.0.5.RELEASE\spring-expression-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.1.RELEASE\spring-boot-autoconfigure-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.0.1.RELEASE\spring-boot-starter-logging-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\USER\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\USER\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;C:\Users\USER\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\USER\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\USER\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\USER\.m2\repository\org\springframework\spring-core\5.0.5.RELEASE\spring-core-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\spring-jcl\5.0.5.RELEASE\spring-jcl-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\USER\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.0.1.RELEASE\spring-boot-starter-test-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-test\2.0.1.RELEASE\spring-boot-test-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.1.RELEASE\spring-boot-test-autoconfigure-2.0.1.RELEASE.jar;C:\Users\USER\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\USER\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\USER\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\USER\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\USER\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\USER\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\USER\.m2\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar;C:\Users\USER\.m2\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar;C:\Users\USER\.m2\repository\net\bytebuddy\byte-buddy\1.7.11\byte-buddy-1.7.11.jar;C:\Users\USER\.m2\repository\net\bytebuddy\byte-buddy-agent\1.7.11\byte-buddy-agent-1.7.11.jar;C:\Users\USER\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\USER\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\USER\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\USER\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\USER\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\USER\.m2\repository\org\springframework\spring-test\5.0.5.RELEASE\spring-test-5.0.5.RELEASE.jar;C:\Users\USER\.m2\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\USER\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\USER\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\USER\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;C:\Users\USER\.m2\repository\commons-cli\commons-cli\1.3.1\commons-cli-1.3.1.jar;C:\Users\USER\.m2\repository\net\java\dev\jna\jna\4.3.0\jna-4.3.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\USER"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_172\jre"/>
+    <property name="basedir" value="C:\Users\USER\eclipse-workspace\WeatherExport"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\USER\AppData\Local\Temp\surefire6435426332799406565\surefirebooter228211874854222476.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_172\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_172-b11"/>
+    <property name="user.name" value="USER"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\USER\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\USER\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_172"/>
+    <property name="user.dir" value="C:\Users\USER\eclipse-workspace\WeatherExport"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_172/bin/server;C:/Program Files/Java/jre1.8.0_172/bin;C:/Program Files/Java/jre1.8.0_172/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;D:\Program Files\MATLAB\R2016a\runtime\win64;D:\Program Files\MATLAB\R2016a\bin;D:\Program Files\MATLAB\R2016a\polyspace\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;;C:\Users\USER\Documents\eclipse-jee-oxygen-3a-win32-x86_64\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.172-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testRetrieveLocations" classname="com.weather.WeatherExport.util.WeatherExportUtilTests" time="0.414">
+    <failure message="expected:&lt;null&gt; but was:&lt;013010&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<null> but was:<013010>
+	at com.weather.WeatherExport.util.WeatherExportUtilTests.testRetrieveLocations(WeatherExportUtilTests.java:70)
+]]></failure>
+  </testcase>
+  <testcase name="testRetrieveWeatherDataAndExportData" classname="com.weather.WeatherExport.util.WeatherExportUtilTests" time="0.625">
+    <failure message="expected:&lt;[網走]&gt; but was:&lt;[ï»¿ç¶²èµ°]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[網走]> but was:<[ï»¿ç¶²èµ°]>
+	at com.weather.WeatherExport.util.WeatherExportUtilTests.testRetrieveWeatherDataAndExportData(WeatherExportUtilTests.java:85)
+]]></failure>
+    <system-out><![CDATA[12:41:22.496 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+12:41:22.505 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+12:41:22.506 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://weather.livedoor.com:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+12:41:22.515 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://weather.livedoor.com:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+12:41:22.516 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://weather.livedoor.com:80
+12:41:22.517 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to weather.livedoor.com/125.6.149.103:80
+12:41:22.589 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.0.5:55673<->125.6.149.103:80
+12:41:22.589 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /forecast/webservice/json/v1?city=013010 HTTP/1.1
+12:41:22.589 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+12:41:22.590 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+12:41:22.591 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /forecast/webservice/json/v1?city=013010 HTTP/1.1
+12:41:22.591 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> accept: application/json
+12:41:22.591 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: weather.livedoor.com
+12:41:22.591 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+12:41:22.591 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+12:41:22.591 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+12:41:22.591 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /forecast/webservice/json/v1?city=013010 HTTP/1.1[\r][\n]"
+12:41:22.591 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "accept: application/json[\r][\n]"
+12:41:22.591 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: weather.livedoor.com[\r][\n]"
+12:41:22.591 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+12:41:22.592 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)[\r][\n]"
+12:41:22.592 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+12:41:22.592 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+12:41:22.661 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+12:41:22.661 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: nginx[\r][\n]"
+12:41:22.661 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Sun, 22 Apr 2018 05:41:23 GMT[\r][\n]"
+12:41:22.661 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+12:41:22.661 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+12:41:22.661 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+12:41:22.661 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Keep-Alive: timeout=3[\r][\n]"
+12:41:22.661 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+12:41:22.661 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+12:41:22.662 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: ldsuid=CoJIjFrcIINoGydpJtbfAg==; expires=Sat, 21-Jul-18 05:41:23 GMT; path=/[\r][\n]"
+12:41:22.662 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+12:41:22.662 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "e14[\r][\n]"
+12:41:22.662 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"pinpointLocations":[{"link":"http://weather.livedoor.com/area/forecast/0120802","name":"\u5317\u898b\u5e02\u5e38\u5442"},{"link":"http://weather.livedoor.com/area/forecast/0121100","name":"\u7db2\u8d70\u5e02"},{"link":"http://weather.livedoor.com/area/forecast/0154300","name":"\u7f8e\u5e4c\u753a"},{"link":"http://weather.livedoor.com/area/forecast/0154400","name":"\u6d25\u5225\u753a"},{"link":"http://weather.livedoor.com/area/forecast/0154500","name":"\u659c\u91cc\u753a"},{"link":"http://weather.livedoor.com/area/forecast/0154600","name":"\u6e05\u91cc\u753a"},{"link":"http://weather.livedoor.com/area/forecast/0154700","name":"\u5c0f\u6e05\u6c34\u753a"},{"link":"http://weather.livedoor.com/area/forecast/0155200","name":"\u4f50\u5442\u9593\u753a"},{"link":"http://weather.livedoor.com/area/forecast/0156400","name":"\u5927\u7a7a\u753a"}],"link":"http://weather.livedoor.com/area/forecast/013010","forecasts":[{"dateLabel":"\u4eca\u65e5","telop":"\u66c7\u306e\u3061\u6674","date":"2018-04-22","temperature":{"min":null,"max":{"celsius":"3","fahrenheit":"37.4"}},"image":{"width":50,"url":"http://weather.liv"
+12:41:22.664 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+12:41:22.664 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Server: nginx
+12:41:22.664 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Sun, 22 Apr 2018 05:41:23 GMT
+12:41:22.664 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+12:41:22.664 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+12:41:22.664 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+12:41:22.664 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Keep-Alive: timeout=3
+12:41:22.664 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+12:41:22.664 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+12:41:22.664 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: ldsuid=CoJIjFrcIINoGydpJtbfAg==; expires=Sat, 21-Jul-18 05:41:23 GMT; path=/
+12:41:22.669 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive for 3000 MILLISECONDS
+12:41:22.677 [main] DEBUG org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [ldsuid="CoJIjFrcIINoGydpJtbfAg==", version:0, domain:weather.livedoor.com, path:/, expiry:Sat Jul 21 12:41:23 ICT 2018]
+12:41:22.681 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "edoor.com/img/icon/12.gif","title":"\u66c7\u306e\u3061\u6674","height":31}},{"dateLabel":"\u660e\u65e5","telop":"\u6674\u6642\u3005\u66c7","date":"2018-04-23","temperature":{"min":{"celsius":"2","fahrenheit":"35.6"},"max":{"celsius":"11","fahrenheit":"51.8"}},"image":{"width":50,"url":"http://weather.livedoor.com/img/icon/2.gif","title":"\u6674\u6642\u3005\u66c7","height":31}},{"dateLabel":"\u660e\u5f8c\u65e5","telop":"\u6674\u306e\u3061\u66c7","date":"2018-04-24","temperature":{"min":null,"max":null},"image":{"width":50,"url":"http://weather.livedoor.com/img/icon/5.gif","title":"\u6674\u306e\u3061\u66c7","height":31}}],"location":{"city":"\u7db2\u8d70","area":"\u5317\u6d77\u9053","prefecture":"\u9053\u6771"},"publicTime":"2018-04-22T11:00:00\u002b0900","copyright":{"provider":[{"link":"http://tenki.jp/","name":"\u65e5\u672c\u6c17\u8c61\u5354\u4f1a"}],"link":"http://weather.livedoor.com/","title":"(C) LINE Corporation","image":{"width":118,"link":"http://weather.livedoor.com/","url":"http://weather.livedoor.com/img/cmn/livedoor.gif","title":"livedoor \u5929\u6c17\u60c5\u5831","height":26}},"title":"\u9053\u6771 \u7db2\u8d70 \u306e\u5929\u6c17","description":{"text":" \u5317\u6d77\u9053\u4ed8\u8fd1\u306f\u300122\u65e5\u306f\u5927\u9678\u65b9\u9762\u306e\u9ad8\u6c17\u5727\u306e\u5f35\u308a\u51fa\u3057\u306e\u4e2d\u3067\u3057\u3087\u3046\u300223\n\u65e5\u306f\u5317\u6d77\u9053\u306e\u5357\u6771\u6d77\u4e0a\u306b\u4e2d\u5fc3\u3092\u79fb\u3059\u9ad8\u6c17\u5727\u306b\u8986\u308f\u308c\u308b\u898b\u8fbc\u307f\u3067\u3059\u3002\n\n \u7db2\u8d70\u30fb\u5317\u898b\u30fb\u7d0b\u5225\u5730\u65b9\u306e22\u65e59\u6642\u306e\u5929\u6c17\u306f\u3001\u66c7\u308a\u3067\u3001\u6674\u308c\u3066\u3044\u308b\u6240\u304c\u3042\n\u308a\u307e\u3059\u3002\n\n 22\u65e5\u306f\u3001\u7db2\u8d70\u5730\u65b9\u306f\u66c7\u308a\u5915\u65b9\u304b\u3089\u6674\u308c\u3001\u5317\u898b\u5730\u65b9\u306f\u6674\u308c\u6642\u3005\u66c7\u308a\u3001\u7d0b\u5225\n\u5730\u65b9\u306f\u66c7\u308a\u6642\u3005\u6674\u308c\u3067\u3057\u3087\u3046\u3002\n\n 23\u65e5\u306f\u3001\u6674\u308c\u6642\u3005\u66c7\u308a\u306e\u898b\u8fbc\u307f\u3067\u3059\u3002\n\n \u6d77\u306e\u6ce2\u306e\u9ad8\u3055\u306f\u300122\u65e5\u306f1.5\u30e1\u30fc\u30c8\u30eb\u3068\u3084\u3084\u9ad8\u3044\u3067\u3059\u304c\u3001\u306e\u30611\u30e1\u30fc\n\u30c8\u30eb\u3067\u3057\u3087\u3046\u300223\u65e5\u306f1\u30e1\u30fc\u30c8\u30eb\u306e\u898b\u8fbc\u307f\u3067\u3059\u3002","publicTime":"2018-04-22T10:38:00\u002b0900"}}"
+12:41:22.681 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+12:41:22.681 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+12:41:22.681 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+12:41:22.681 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://weather.livedoor.com:80] can be kept alive for 3.0 seconds
+12:41:22.681 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+12:41:22.682 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://weather.livedoor.com:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+]]></system-out>
+  </testcase>
+  <testcase name="testRetrieveLocationsWrongUrl1" classname="com.weather.WeatherExport.util.WeatherExportUtilTests" time="0.188"/>
+  <testcase name="testRetrieveLocationsWrongUrｌ2" classname="com.weather.WeatherExport.util.WeatherExportUtilTests" time="0.017"/>
+  <testcase name="testRetrieveWeatherDataWrongUrl1" classname="com.weather.WeatherExport.util.WeatherExportUtilTests" time="0.004"/>
+  <testcase name="testRetrieveWeatherDataWrongUr2" classname="com.weather.WeatherExport.util.WeatherExportUtilTests" time="0.045"/>
+</testsuite>
